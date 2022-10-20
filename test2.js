@@ -1,26 +1,7 @@
-// describe ('eMag.ro', () => {
-
-    // it('should load', async () => {
-
-       // await browser.url('http://emag.ro');
-
-       // Selectori
-
-       // const searchBox = await $('#searchboxTrigger');   // id cu # in fata
-
-       // const helpLink = await $('.navbar-aux-help-link');  // class cu . in fata
-
-       // const secondButton = await $('//*[@id="main-container"]/div/section[1]/div/div/div/div/div[2]/img'); // xpath fara nimic in fata
-
-       //  helpLink.click();
-
-   // });
-
-   
-// });
+// **Automation Test Suite_eMag website** // 
 
  
- 
+ -----------------------------------------------------------------
  
  
  describe ('eMag.ro', () => {
