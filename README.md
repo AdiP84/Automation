@@ -1,6 +1,8 @@
 # Automation
 
-**Automated test suite**
+**Automated test suite with WebDriverIO**
+
+- built over Selenium
 
 I ran the test using the command: npx wdio run ./wdio.conf.js --spec test2.js in commmand prompt.
 
