@@ -1,4 +1,4 @@
-# Automation
+# Automation with JavaScript
 
 **Automated test suite with WebDriverIO**
 
@@ -16,3 +16,19 @@ All 5 tests passed.
 5. should have a functional search
 
 I ran the test using the command: npx wdio run ./wdio.conf.js --spec test2.js in commmand prompt.
+
+**Automated test suite with Cypress**
+
+**Tests:**
+
+1. should function with a basic search 
+2. checks if the title of the webpage is correct
+3. finds the "Sign in with Google" button
+4. verifies if user can login
+5. should add items to the cart and proceed to checkout
+6. should show an error message when invalid credentials are entered
+
+I attached images which validate the successful execution of all 6 automated tests.
+All 5 tests passed.
+
+
