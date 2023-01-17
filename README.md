@@ -2,8 +2,6 @@
 
 **Automated test suite with WebDriverIO**
 
-- built over Selenium
-
 I attached an image which validates the successful execution of all 5 automated tests for the "eMag" test suite.
 All 5 tests passed.
 
