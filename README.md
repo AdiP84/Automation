@@ -26,7 +26,7 @@ I ran the test using the command: npx wdio run ./wdio.conf.js --spec test2.js in
 5. should add items to the cart and proceed to checkout
 6. should show an error message when invalid credentials are entered
 
-I attached images which validate the successful execution of all 6 automated tests.
-All 5 tests passed.
+I attached images which validate the successful execution of all 6 automated tests on Google, Amazon and LinkedIn webpages.
+All 6 tests passed.
 
 
