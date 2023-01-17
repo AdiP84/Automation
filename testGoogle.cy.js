@@ -8,6 +8,3 @@ it ('should function with a basic search', () => {
 
 })
 
-// path in terminal /Users/adrianperianu/Projects/TestareCypress
-//command in terminal: npx cypress open
-//class e cu . inaite de selector si id e cu #
