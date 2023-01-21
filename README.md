@@ -20,13 +20,14 @@ I ran the test using the command: npx wdio run ./wdio.conf.js --spec test2.js in
 **Tests:**
 
 1. should function with a basic search 
-2. checks if the title of the webpage is correct
-3. finds the "Sign in with Google" button
-4. verifies if user can login
-5. should add items to the cart and proceed to checkout
-6. should show an error message when invalid credentials are entered
+2. should be able to filter results by time
+3. checks if the title of the webpage is correct
+4. finds the "Sign in with Google" button
+5. verifies if user can login
+6. should add items to the cart and proceed to checkout
+7. should show an error message when invalid credentials are entered
 
-I attached images which validate the successful execution of all 6 automated tests on Google, Amazon and LinkedIn webpages.
-All 6 tests passed.
+I attached images which validate the successful execution of all 7 automated tests on Google, Amazon and LinkedIn webpages.
+All 7 tests passed.
 
 
