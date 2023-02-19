@@ -15,7 +15,7 @@ All 5 tests passed.
 
 I ran the test using the command: npx wdio run ./wdio.conf.js --spec test2.js in commmand prompt.
 
-**Automated test suite with Cypress**
+**Automated test suite with CYPRESS**
 
 **Tests:**
 
@@ -26,8 +26,9 @@ I ran the test using the command: npx wdio run ./wdio.conf.js --spec test2.js in
 5. verifies if user can login
 6. should add items to the cart and proceed to checkout
 7. should show an error message when invalid credentials are entered
+8. should select the desired product and get to product page
 
-I attached images which validate the successful execution of all 7 automated tests on Google, Amazon and LinkedIn webpages.
-All 7 tests passed.
+I attached images which validate the successful execution of all 8 automated tests on Google, Amazon and LinkedIn webpages.
+All 8 tests passed.
 
 
