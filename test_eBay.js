@@ -2,7 +2,7 @@
 /// <reference types="cypress" />
 
 
-describe('eCommerce complete E2E exercise: purchase multiple items and proceed to checkout', () => {
+describe('eCommerce E2E exercise', () => {
 
     it('should successfully select the desired product and get to product page', () => {
         cy.visit('https://www.ebay.com')
