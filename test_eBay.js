@@ -5,6 +5,9 @@
 describe('eCommerce E2E exercise', () => {
 
     it('should successfully select the desired product and get to product page', () => {
+        
+        // putting assertions at every step and handling promises
+        
         cy.visit('https://www.ebay.com')
         cy.get('li.hl-cat-nav__js-tab:nth-child(3)').click()
         cy.url().should('include','Electronics')
@@ -29,13 +32,20 @@ describe('eCommerce E2E exercise', () => {
             cy.wrap(dropdown).should('have.attr','aria-expanded','true')
         })
         cy.contains('BitDefender').click()
+        
         cy.get('.s-item__title').each((el,index) => {
             const productName = el.text()
             if (productName === 'Bitdefender Premium VPN 2023 UNLIMITED 10 devices 1 year Win PC Mac Android iOS')
             {
                 const desiredProduct = cy.get('a.s-item__link').eq(index)
+        
+            // Method 1: Handling child tab using a combination of Cypress and jQuery commands (removing 'target' attribute)
+                
                 desiredProduct.invoke('removeAttr','target')
                 //desiredProduct.click()
+                
+            // Method 2: Opening the specific product link in the same page by grabbing the 'href' attribute as a result of using prop() method
+                
                 desiredProduct.invoke('prop','href').then(function(url){
                     cy.log(url)
                     expect(url).to.equal('https://www.ebay.com/itm/124722064324?hash=item1d0a03abc4:g:s98AAOSwaBZhJcJ1')
