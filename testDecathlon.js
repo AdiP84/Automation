@@ -4,7 +4,7 @@
 import 'cypress-iframe'
 
 describe('eCommerce website complex E2E exercise', () => {
-    it('should add the products to cart and compare sum of products in the cart with actual total amount', () => {
+    it('should add the products to cart and compare sum of products in the cart with final total amount', () => {
         cy.visit('https://www.decathlon.ro/')
         cy.wait(2000)
         cy.get('#didomi-notice-agree-button').click()
