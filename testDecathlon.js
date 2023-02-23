@@ -4,23 +4,28 @@
 import 'cypress-iframe'
 
 describe('eCommerce website complex E2E exercise', () => {
-    it('should add the products to cart and compare sum of products in the cart with final total amount', () => {
+    it('should add the selected products to cart and compare sum of products in the cart with final total amount', () => {
         cy.visit('https://www.decathlon.ro/')
         cy.wait(2000)
         cy.get('#didomi-notice-agree-button').click()
         cy.get('input[type="search"]').type('Bicicleta MTB Negru {enter}')
+        cy.get('span.svelte-nm48d0').should('be.visible').and('have.text','(1082 rezultate)')
         cy.get('a.vtmn-block').each((el, index) => 
         {
             var attribute = el.prop('href')
-            if(attribute.includes('carpat-c2041s-20-galben-negru'))
+            if(attribute.includes('carpat-c2041s-20-verde-negru'))
             {
                 cy.get('button span.vtmn-truncate').eq(index).click()
             }
         })
-        cy.get('.vtmn-typo_text-3.vtmn-my-0').should('have.text','Bicicleta MTB-PLIABILA CARPAT C2041S 20" GALBEN/NEGRU')
+        cy.get('.vtmn-typo_text-3.vtmn-my-0').should('have.text','Bicicleta MTB-PLIABILA CARPAT C2041S 20" VERDE/NEGRU')
         cy.get('.quick-buy-add-to-card > .vtmn-btn').click()
         cy.get('span.count.badge--blue.svelte-v2e9cy').should('be.visible').and('have.text','1')
-        cy.get('span.svelte-nm48d0').should('be.visible').and('have.text','(1069 rezultate)')
+        cy.get('div.searchText.svelte-nm48d0').then(function(element)
+        {
+            const searchText = element.text()
+            expect(searchText.includes('Bicicleta MTB Negru')).to.be.true
+        })
         cy.get('a.vtmn-block').each((el, index) => 
         {
             var attribute = el.prop('href')
