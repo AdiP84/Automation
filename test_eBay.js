@@ -27,7 +27,7 @@ describe('eCommerce E2E exercise', () => {
             cy.wrap($el).click()
         })
         cy.get('button[aria-label="Apply"]').click()
-        cy.get('.x-flyout__button').eq(2).click().then(function(dropdown)
+        cy.get('.x-flyout__button').eq(3).click().then(function(dropdown)
         {
             cy.wrap(dropdown).should('have.attr','aria-expanded','true')
         })
@@ -49,6 +49,12 @@ describe('eCommerce E2E exercise', () => {
                 desiredProduct.invoke('prop','href').then(function(url){
                     cy.log(url)
                     expect(url).to.equal('https://www.ebay.com/itm/124722064324?hash=item1d0a03abc4:g:s98AAOSwaBZhJcJ1')
+                    cy.get('span.s-item__price').then(function(el)
+                    {
+                        var price = el.eq(index)
+                        var price = price.text()
+                        expect(price).to.be.equal('$22.47')
+                    })
                     //cy.pause()
                     //cy.visit(url)
                 })
