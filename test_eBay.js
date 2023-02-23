@@ -27,7 +27,7 @@ describe('eCommerce E2E exercise', () => {
             cy.wrap($el).click()
         })
         cy.get('button[aria-label="Apply"]').click()
-        cy.get('.x-flyout__button').eq(3).click().then(function(dropdown)
+        cy.get('.x-flyout__button').eq(2).click().then(function(dropdown)
         {
             cy.wrap(dropdown).should('have.attr','aria-expanded','true')
         })
