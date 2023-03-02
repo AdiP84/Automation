@@ -14,8 +14,7 @@ it('should be able to filter results by time', () => {
         $el.css('display', 'block')
     })
     cy.get('#tn_1').should('exist');
-    cy.get(':nth-child(2) > g-popup > .rIbAWc > [jsname="LgbsSe"] > .hdtb-mn-hd > .KTBKoe',{timeout: 3000})
-        .contains('Any time').click({force: true});
+    cy.contains('Any time').click({force: true});
     cy.get('.y0fQ9c > span').contains('Custom range').click();
     cy.get('.goog-date-picker-head > [colspan="2"]').click();
     cy.get('#OouJcb').type('12/31/2022');
