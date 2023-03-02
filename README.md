@@ -3,7 +3,6 @@
 **Automated test suite with WebDriverIO**
 
 I attached an image which validates the successful execution of all 5 automated tests for the "eMag" test suite.
-All 5 tests passed.
 
 **Tests:**
 
@@ -30,6 +29,6 @@ I ran the test using the command: npx wdio run ./wdio.conf.js --spec test2.js in
 9. should select the desired product and get to product page
 
 I attached images which validate the successful execution of all 9 automated tests on Decathlon, eBay, Google, Amazon and LinkedIn webpages.
-All 9 tests passed.
+The Cypress framework was successfully integrated into Jenkins CI tool. The project is parameterised.
 
 
