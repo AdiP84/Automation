@@ -20,8 +20,7 @@ it('should be able to filter results by time', () => {
     cy.get('#OouJcb').type('12/31/2022');
     cy.get('#rzG2be').type('01/21/2023');
     cy.contains('Go').click();
-    cy.get(':nth-child(2) > g-popup > .rIbAWc > [jsname="LgbsSe"] > .hdtb-mn-hd > .KTBKoe',{timeout: 3000})
-        .should('have.text', 'Dec 31, 2022 – Jan 21, 2023');   
+    cy.get('div div div div.KTBKoe').eq(0).should('have.text', 'Dec 31, 2022 – Jan 21, 2023');   
 })
 })
 
