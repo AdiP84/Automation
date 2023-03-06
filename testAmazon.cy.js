@@ -11,7 +11,7 @@ describe('E-commerce: Amazon', () => {
     it ('should add items to the cart and proceed to checkout', () => {
         cy.visit('https://www.amazon.com');
         cy.get('#twotabsearchtextbox').type('ebook reader').type('{enter}');
-        const item = cy.get('[data-asin="B08VJK1Y1Q"]').contains('Pocketbook InkPad Color');
+        const item = cy.contains('Pocketbook InkPad Color');
         item.scrollIntoView();
         item.click();
         cy.get('#add-to-cart-button').click();
