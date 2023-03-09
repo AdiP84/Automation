@@ -30,5 +30,6 @@ I ran the test using the command: npx wdio run ./wdio.conf.js --spec test2.js in
 
 I attached images which validate the successful execution of all 9 automated tests on Decathlon, eBay, Google, Amazon and LinkedIn webpages.
 The Cypress framework was successfully integrated into Jenkins CI tool. The project is parameterised.
+Moreover, the eCommerce "Decathlon" test was converted to feature file with Gherkin syntax (BDD Cucumber framework).
 
 
