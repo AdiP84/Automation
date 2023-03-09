@@ -32,4 +32,10 @@ I attached images which validate the successful execution of all 9 automated tes
 The Cypress framework was successfully integrated into Jenkins CI tool. The project is parameterised.
 Moreover, the eCommerce "Decathlon" test was converted to feature file with Gherkin syntax (BDD Cucumber framework).
 
+# Mobile Automation with Java using Appium
+
+**Tests:**
+
+1. Should swipe through photos in the inbuilt IOS Photos app from first to last and navigate back to Albums menu
+
 
