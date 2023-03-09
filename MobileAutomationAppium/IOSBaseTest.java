@@ -29,9 +29,8 @@ public class IOSBaseTest {
 		//service.start();
 	
 	   XCUITestOptions options = new XCUITestOptions();
+		
 	   options.setDeviceName("iPhone 14 Pro");
-	   //options.setApp("//Users//adrianperianu//Library//Developer//Xcode//DerivedData//UIKitCatalog-flprbdqwudikdgffprmktcagrqoc//Build//Products//Debug-iphonesimulator//UIKitCatalog.app");
-	   //options.setApp("//Users//adrianperianu//eclipse-workspace//Appium//src//test//java//resources//TestApp 3.app");
 	   options.setPlatformVersion("16.2");
 	   //Appium - Webdriver Agent -> IOS Apps.
 	   options.setWdaLaunchTimeout(Duration.ofSeconds(20));
@@ -39,10 +38,8 @@ public class IOSBaseTest {
 	   
 		driver = new IOSDriver (new URL("http://127.0.0.1:4723"), options);
 	
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
 	}
-   
 	@AfterClass
 	public void TearDown()
 	{
